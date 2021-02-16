@@ -1,0 +1,118 @@
+    1  ls
+    2  ls /
+    3  pwd
+    4  ls /
+    5  clear
+    6  uname -a
+    7  ls /
+    8  pwd
+    9  ping 8.8.8.8
+   10  ifconfig
+   11  arp -a
+   12  192.168.88.221
+   13  ping 192.168.88.221
+   14  arp -a
+   15  sudo apt update
+   16  sudo apt install perl
+   17  sudo apt install make gcc -y
+   18  ls /dev/
+   19  ls /dev/cdrom 
+   20  ls /mnt
+   21  ls /mnt/
+   22  sudo apt install virtual-guest-utils -y
+   23  clear
+   24  sudo apt install virtualbox-guest-utils -y
+   25  sudo mount /dev/cdrom /mnt
+   26  cd /mnt/
+   27  ls
+   28  pwd
+   29  ls -a
+   30  cd 
+   31  sudo art upgrade -y
+   32  sudo apt upgrade -y
+   33  duso reboot
+   34  sudo reboot 
+   35  cd /home/
+   36  tree
+   37  sudo apt install tree
+   38  tree
+   39  tree --help
+   40  ls --help
+   41  man ls
+   42  ls -lR
+   43  ls
+   44  ls /home/user/ -lha
+   45  ls -lRa
+   46  touch file2 file2
+   47  sudo touch file2 file2
+   48  ls -lh
+   49  sudo touch file1 file2
+   50  ls -lh
+   51  sudo mkdir folder_test
+   52  ls -lh
+   53  mv file1 file2 folder_test/
+   54  sudo mv file1 file2 folder_test/
+   55  ls -lh
+   56  ls -lhR
+   57  ls folder_test/
+   58  sudo cp /var/log/syslog /home/folder_test/
+   59  ls folder_test/ -l
+   60  ls folder_test/syslog 
+   61  ls folder_test/syslog -Rl
+   62  tar cf folder_test/ 
+   63  ls folder_test/ -l
+   64  tar cf folder_test/ folder.tar
+   65  tar cf folder_test.tar folder_test/
+   66  sudo tar cf folder_test.tar folder_test/
+   67  ls .
+   68  tar tvf folder_test.tar 
+   69  sudo tar xvf folder_test.tar folder_test/file1 
+   70  tar tvf folder_test.tar 
+   71  ls
+   72  ls folder_test
+   73  rm folder_test/file1
+   74  sudo rm folder_test/file1
+   75  ls folder_test
+   76  sudo tar xvf folder_test.tar folder_test/file1 
+   77  ls folder_test
+   78  man find
+   79  find /etc/ *.yaml
+   80  find --help
+   81  man find
+   82  find /etc/ -name *.yaml
+   83  sudo find /etc/ -name *.yaml
+   84  sudo find /etc/ -name *.sh
+   85  sudo find /etc/ -name *yaml
+   86  sudo find /etc/ -name *.sh
+   87  sudo find /etc/ -name *yaml
+   88  ls
+   89  ls folder_test
+   90  cd folder_test/
+   91  ls
+   92  sudo touch {2012..2021}/{1..12}
+   93  sudo mkdir {2012..2021}/{1..12}
+   94  ls
+   95  sudo mkdir {2012..2021}
+   96  ls
+   97  sudo mkdir {2012..2021}/{1..12}
+   98  ls 2012
+   99  sudo touch {2012..2021}/{1..12}/test
+  100  ls 2012/1
+  101  ls 2012/2
+  102  rm -r {2012..2021}
+  103  sudo rm -r {2012..2021}
+  104  ls
+  105  sudo touch {2012..2021}/{1..12}/test
+  106  sudo touch -r {2012..2021}/{1..12}/test
+  107  sudo mkdir -r {2012..2021}/{1..12}/test
+  108  tree {2012..2021}
+  109  ls
+  110  sudo mkdir -p {2012..2021}/{1..12}
+  111  tree
+  112  sudo mkdir -p {2012..2021}/{1..12}
+  113  ls -lh
+  114  tree
+  115  history
+  116  history > history.log
+  117* sudo 
+  118  history > /home/user/history.log
