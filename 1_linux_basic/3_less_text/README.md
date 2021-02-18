@@ -117,7 +117,7 @@ wc -l < err_from_etc
 
 
 
-![тут 11](https://github.com/degreekeeper/geekb_network/blob/main/1_linux_basic/3_less_text/screenshots/Screenshot_11.jpg)
+
 
 
 
