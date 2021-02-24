@@ -1,0 +1,118 @@
+   59  id user
+   60  sudo /etc/group
+   61  sudo cat /etc/group
+   62  useradd test
+   63  sudo useradd test
+   64  sudo cat /etc/passwd | grep test
+   65  user@ubuntu-geekbrains:~$
+   66  passwd test
+   67  sudo passwd test
+   68  ls -l /home/
+   69  cd /home/
+   70  ls
+   71  cd ..
+   72  userdel -r test
+   73  sudo userdel -r test
+   74  sudo cat /etc/passwd | grep test
+   75  history
+ 50  usermod -a test_group
+   51  sudo cat /etc/group | grep test
+   52  usermod -a test_group
+   53  usermod -a -G test_group user
+   54  sudo usermod -a -G test_group user
+   55  id user
+   56  sudo cat /etc/group
+   57  gpasswd --help
+   58  sudo gpasswd -d user test_group
+   59  id user
+   60  cat /etc/sudoers
+   61  sudo cat /etc/sudoers
+   62  cat /etc/sudoers.d
+   63  ls /etc/sudoers.d
+   64  cat /etc/sudoers.d/README
+   65  sudo cat /etc/sudoers.d/README
+   66  sudo cat /etc/sudoers
+   67  id user
+   68  visudo
+   69  sudo visudo
+   70  sudo cat /etc/sudoers
+   71  cat /etc/passwd
+   72  id user
+   73  id -n user
+   74  id --help
+   75  id -nr user
+   76  id -nG user
+   77  cat /etc/shadow
+   78  sudo cat /etc/shadow
+   79  pwd
+   80  ls -l
+   81  touch file1 file2
+   82  ls -l | grep file
+   83  chmod file1 ug+rw o+r
+   84  chmod ug+rw o+r file1
+   85  chmod ug+rw,o+r file1
+   86  ls -l | grep file1
+   87  ls -l | grep file2
+   88  chmod 600 file2
+   89  ls -l | grep file2
+   90  groupadd developer
+   91  sudo groupadd developer
+   92  sudo useradd -m -G developer dev1
+   93  sudo useradd -m -G developer dev2
+   94  id dev1 -nG
+   95  id dev2 -nG
+   96  sudo /etc/group | grep developer
+   97  sudo cat /etc/group | grep developer
+   98  mkdir /home/user/dir_for_developers
+   99  ls -l /home/user/ | grep dir
+  100  sudo chmod g+s dir_for_developers/
+  101  ls -l /home/user/ | grep dir
+  102  passwd dev1
+  103  sudo passwd dev1
+  104  sudo passwd dev2
+  105  ls /home/
+  106  ls /home/dev1/
+  107  groupadd --help
+  108  useradd --help
+  109  useradd -Ga
+  110  usermode --help
+  111  usermod --help
+  112  sudo usermod -aG sudo dev1 dev2
+  113  id dev1
+  114  id dev2
+  115  sudo usermod -aG sudo dev1
+  116  id dev1
+  117  sudo usermod -aG sudo dev2
+  118  id dev1
+  119  id dev2
+  120  ls -l
+  121  cd dir_for_developers/
+  122  ls -l
+  123  ls
+  124  rm file111
+  125  ls
+  126  touch file222
+  127  ls -l
+  128  cd ..
+  129  ls -l
+  130  groupmod --help
+  131  chgrp -R developer /home/user/dir_for_developers/
+  132  ls -l
+  133  sudo chgrp -R developer /home/user/dir_for_developers/
+  134  ls -l | grep dir
+  135  cd dir_for_developers/
+  136  ls -l
+  137  ls
+  138  sudo touch file333
+  139  ls -l
+  140  rm file333
+  141  touch file333
+  142  ls -l
+  143  nano file444
+  144  id user
+  145  usermod -aG developer user
+  146  sudo usermod -aG developer user
+  147  id user -nG
+  148  sudo cat /etc/group | grep devel
+  149  ls -l
+  150  history
