@@ -1,0 +1,97 @@
+  152  lsblk
+  153  tree -d
+  154  tree / -d
+  155  clear
+  156  lsblk
+  157  mount
+  158  lsblk
+  159  findmnt
+  160  lsblk
+  161  parted /dev/sdb
+  162  sudo parted /dev/sdb
+  163  lsblk
+  164  udevadm settle
+  165  lsblk
+  166  mkfs.ext4 /dev/sdb1
+  167  sudo mkfs.ext4 /dev/sdb1
+  168  ls /mnt/
+  169  ls /mnt
+  170  cd /mnt/
+  171  mkdir ext4
+  172  sudo  mkdir ext4
+  173  ls /mnt/
+  174  sudo mount /dev/sdb1 /mnt/ext4/
+  175  lsblk
+  176  sudo cat /etc/fstab
+  177  blkid
+  178  lsblk
+  179  sudo cat /etc/fstab
+  180  sudo nano /etc/fstab
+  181  sudo cat /etc/fstab
+  182  reload
+  183  reboot
+  184  sudo reboot
+  185  lsblk
+  186  cat /etc/fstab
+  187  parted
+  188  parted /dev/sdb
+  189  sudo parted /dev/sdb
+  190  lsblk
+  191  sudo mkfs.xfs /dev/sdb2
+  192  cd /mnt/
+  193  sudo mkdir xfs
+  194  sudo mount /dev/sdb2 /mnt/xfs/
+  195  lsblk
+  196  cd ext4/
+  197  touch file1
+  198  sudo touch file1
+  199  sudo nano file1
+  200  ls -li
+  201  sudo cp file1 file2
+  202  ls -li
+  203  lsblk
+  204  parted /dev/sdb
+  205  sudo parted /dev/sdb
+  206  sudo pvcreate /dev/sdb2
+  207  lsblk
+  208  sudo umount /dev/sdb2 /mnt/xfs
+  209  lsblk
+  210  sudo pvcreate /dev/sdb2
+  211  sudo vgcreate xfs_lvm /dev/sdb2
+  212  sudo lvcreate -n lvm_for_xfs -L 100M
+  213  sudo lvcreate -n xfs -L 100M xfs_lvm
+  214  sudo lvcreate -n xfs -L 98M xfs_lvm
+  215  sudo lvcreate -n xfs -L 90M xfs_lvm
+  216  lsblk
+  217  vgs
+  218  sudo vgs
+  219  sudo lvs
+  220  mount
+  221  findmnt
+  222  mkfs.xfs /dev/xfs_lvm/xfs
+  223  sudo  mkfs.xfs /dev/xfs_lvm/xfs
+  224  ls /mnt/
+  225  sudo mount /dev/xfs_lvm/xfs /mnt/xfs/
+  226  lsblk
+  227  ls
+  228  ls -li
+  229  ln file1 /mnt/ext4/file4
+  230  sudo ln file1 /mnt/ext4/file4
+  231  ls -li
+  232  rm file1
+  233  sudo rm file1
+  234  ls -li
+  235  cat file2
+  236  cat file4
+  237  ls /mnt/xfs/
+  238  link -s file4 /mnt/xfs/link
+  239  ln -s file4 /mnt/xfs/link
+  240  sudo ln -s file4 /mnt/xfs/link
+  241  ls -li /mnt/xfs/
+  242  cat /mnt/xfs/link
+  243  sudo rm /mnt/xfs/link
+  244  ls -li /mnt/xfs/
+  245  sudo ln -s /mnt/ext4/file4 /mnt/xfs/link
+  246  ls -li /mnt/xfs/
+  247  cat /mnt/xfs/link
+  248  history
