@@ -1,0 +1,81 @@
+  193  ps aux
+  194  ps aux
+  195  ps aux | head
+  196  ps aux | grep "PID|user"
+  197  ps aux | grep PID
+  198  ps aux | grep 'PID|user'
+  199  ps aux | grep -p "PID|user"
+  200  grep --help
+  201  ps aux | grep -E "PID|user"
+  202  ps -ef
+  203  ps -ef | grep -e "PID|user"
+  204  ps -ef | grep -E "PID|user"
+  205  ps -ef | grep -P "PID|user"
+  206  kill -l
+  207  systemctl status
+  208  systemctl
+  209  systemctl ststus network.target
+  210  systemctl status network.target
+  211  systemctl | grep service
+  212  systemctl cat cron.service
+  213  systemctl cat virtualbox-guest-utils.service
+  214  systemctl get-default
+  215  systemctl show cron
+  216  lscpu
+  217  journalctl
+  218  journalctl -f
+  219  journalctl -p err
+  220  journalctl -u ssh
+  221  cat /etc/ssh/sshd_config
+  222  nano /etc/ssh/sshd_config
+  223  sudo nano /etc/ssh/sshd_config
+  224  systemctl restart sshd
+  225  sudo systemctl sshd restart
+  226  sudo systemctl restart sshd
+  227  systemctl status sshd
+  228  sudo nano /etc/ssh/sshd_config
+  229  systemctl reload sshd
+  230  systemctl status sshd
+  231  sudo apt-get install mc -y
+  232  ps -ef | grep -P "PID|mc"
+  233  kill -9 2261
+  234  pwd
+  235  ls -l
+  236  touch geekbrains_ping.sh
+  237  nano geekbrains_ping.sh
+  238  ls -lh
+  239  chmod --help
+  240  ls -lh
+  241  chmod ugo+x geekbrains_ping.sh
+  242  ls -lh
+  243  ./geekbrains_ping.sh
+  244  cat geekbrains_ping.sh
+  245  nano geekbrains_ping.sh
+  246  ./geekbrains_ping.sh
+  247  touch /etc/systemd/system/geekbrains_ping.service
+  248  sudo touch /etc/systemd/system/geekbrains_ping.service
+  249  nano touch /etc/systemd/system/geekbrains_ping.service
+  250  ls -l
+  251  cat touch
+  252  nano geekbrains_ping.sh
+  253  cat /etc/systemd/system/geekbrains_ping.service
+  254  sudo nano /etc/systemd/system/geekbrains_ping.service
+  255  cat /etc/systemd/system/geekbrains_ping.service
+  256  sudo nano /etc/systemd/system/geekbrains_ping.service
+  257  systemctl daemon-reload
+  258  systemctl status geekbrains_ping.service
+  259  systemctl start geekbrains_ping.service
+  260  sudo systemctl start geekbrains_ping.service
+  261  sudo systemctl status geekbrains_ping.service
+  262  sudo systemctl enable geekbrains_ping.service
+  263  sudo systemctl is-enabled geekbrains_ping.service
+  264  sudo systemctl status geekbrains_ping.service
+  265  ps aux | grep pts
+  266  who
+  267  ps -ef | grep -P "PID|mc"
+  268  mc
+  269  ps aux | grep ping
+  270  journalctl -f
+  271  sudo reload
+  272  sudo reboot
+  273  history
