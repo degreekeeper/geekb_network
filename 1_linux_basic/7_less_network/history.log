@@ -1,0 +1,101 @@
+  276  ip addr
+  277  arp -a
+  278  ping 192.168.88.212
+  279  ip route
+  280  ip route -v
+  281  ip route help
+  282  ip addr show
+  283  ip link show
+  284  ip -s link show
+  285  ip route show
+  286  ping 8.8.8.8
+  287  ip route show
+  288  sudo apt install network-manager.io
+  289  netplan --help
+  290  systemctl status netplan
+  291  cat /etc/init.d/netplan
+  292  sudo apt update
+  293  sudo apt install netplan
+  294  reboot
+  295  sudo reboot
+  296  su
+  297  sudo /etc/ssh/?
+  298  sudo /etc/ssh/
+  299  ls /etc/ssh
+  300  cat /etc/sshd_config
+  301  reboot
+  302  tcpdump -n -p 53
+  303  sudo tcpdump -n -p 53
+  304  sudo tcpdump --help
+  305  sudo tcpdump -n -p53
+  306  tcpdump -D
+  307  tcpdump -i enp0s3
+  308  sudo tcpdump -i enp0s3
+  309  sudo tcpdump -i enp0s3 port 53
+  310  sudo tcpdump -n -i enp0s3 port 53
+  311  sudo tcpdump -n -i enp0s3 protocl icmp
+  312  sudo tcpdump -n -i enp0s3 protocol icmp
+  313  sudo tcpdump -n -i enp0s3 proto icmp
+  314  sudo tcpdump -n -i enp0s3 port 53
+  315  sudo tcpdump -n -i enp0s3 proto udp
+  316  sudo tcpdump --help
+  317  man tcpdump
+  318  sudo tcpdump -n -i enp0s3 icmp
+  319  man tcpdump
+  320  sudo tcpdump -n -i enp0s3 icmp-echo
+  321  sudo tcpdump -n -i enp0s3 icmp[icmptype]
+  322  sudo tcpdump -n -i enp0s3 icmp[icmptype] = icmp-echo
+  323  sudo tcpdump -n -i enp0s3 icmp = icmp-echo
+  324  sudo tcpdump -n -i enp0s3 icmp[icmptype] = icmp-echo reply
+  325  sudo tcpdump -n -i enp0s3 icmp[icmptype] = icmp-reply
+  326  sudo tcpdump -n -i enp0s3 icmp[icmptype] = icmp-echoreply
+  327  sudo tcpdump -n -i enp0s3 icmp[icmptype] = icmp-echorequest
+  328  sudo tcpdump -n -i enp0s3 icmp[icmptype] = icmp-request
+  329  sudo tcpdump -n -i enp0s3 icmp[icmptype] = icmp-echo
+  330  history
+
+  
+  
+  317  sudo /etc/resolv.conf
+  318  sudo cat /etc/resolv.conf
+  319  systemd-resolve --status
+  320  systemd-resolve
+  321  systemd-resolve -status
+  322  systemd-resolve status
+  323  man systemd-resolve
+  324  systemd-resolve --statistics
+  325  ping goggle.com
+  326  ping google.com
+  327  systemd-resolve --statistics
+  328  nmcli dev show
+  329  cat /etc/systemd/resolved.conf
+  330  cat /etc/systemd/network/
+  331  ls /etc/systemd/network/
+  332  ls /etc/networks
+  333  cat /etc/networks
+  334  cat /etc/network/interfaces
+  335  cat /etc/network/interfaces.d/
+  336  ls /etc/network/interfaces.d/
+  337  cd
+  338  cat /etc/network/interfaces
+  339  ls /etc/resolv.conf
+  340  cat /etc/resolv.conf
+  341  sudo cat /etc/network/interfaces
+  342  sudo nano /etc/network/interfaces
+  343  ifconfig
+  344  sudo nano /etc/network/interfaces
+  345  ping geekbrains.ru
+  346  sudo nano /etc/systemd/resolved.conf
+  347  cat /etc/resolv.conf
+  348  sudo nano /etc/resolv.conf
+  349  ping google.com
+  350  sudo nano /etc/resolv.conf
+  351  ping geekbrains.ru
+  352  man nc
+  353  nc -vz 53 geekbrains.ru
+  354  nc -vz geekbrains.ru
+  355  nc -vz geekbrains.ru 53
+  356  nc -v geekbrains.ru 53
+  357  nc -vzw1 geekbrains.ru 53
+  358  nc -vzw1 geekbrains.ru 80
+  359  nc -vzw1 geekbrains.ru 443
