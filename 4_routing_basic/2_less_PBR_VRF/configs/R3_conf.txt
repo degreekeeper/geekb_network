@@ -1,0 +1,126 @@
+R3#show running-config
+Building configuration...
+
+Current configuration : 1389 bytes
+!
+! Last configuration change at 14:51:34 EET Thu Jul 29 2021
+!
+version 15.4
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+!
+hostname R3
+!
+boot-start-marker
+boot-end-marker
+!
+!
+!
+no aaa new-model
+clock timezone EET 2 0
+mmi polling-interval 60
+no mmi auto-configure
+no mmi pvc
+mmi snmp-timeout 180
+!
+!
+!
+!
+!
+!
+!
+!
+
+
+!
+ip vrf VPC6
+!
+!
+!
+!
+no ip domain lookup
+ip cef
+no ipv6 cef
+!
+multilink bundle-name authenticated
+!
+!
+!
+!
+!
+!
+!
+!
+!
+redundancy
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+interface Ethernet0/0
+ no ip address
+ shutdown
+!
+interface Ethernet0/1
+ ip address 192.168.3.1 255.255.255.0
+ ip policy route-map VPC7_to_VPC6_and_VPC8
+!
+interface Ethernet0/2
+ ip address 172.16.13.2 255.255.255.0
+!
+interface Ethernet0/3
+ no ip address
+ shutdown
+!
+ip forward-protocol nd
+!
+!
+no ip http server
+no ip http secure-server
+!
+ip access-list extended ACL_VPC7_to_VPC6
+ permit ip host 192.168.3.7 host 10.0.0.6
+ip access-list extended ACL_VPC7_to_VPC8
+ permit ip host 192.168.3.7 host 192.168.4.8
+!
+!
+route-map VPC7_to_VPC6_and_VPC8 permit 10
+ match ip address ACL_VPC7_to_VPC6
+ set ip next-hop 172.16.13.1
+!
+route-map VPC7_to_VPC6_and_VPC8 permit 20
+ match ip address ACL_VPC7_to_VPC8
+ set ip next-hop 172.16.13.1
+!
+!
+!
+control-plane
+!
+!
+!
+!
+!
+!
+!
+!
+line con 0
+ logging synchronous
+line aux 0
+line vty 0 4
+ login
+ transport input none
+!
+!
+end
